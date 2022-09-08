@@ -19,3 +19,20 @@
         width: 500px;
       }
 }
+
+@media screen and (max-width: 1295px){
+    .multiple-items{
+        width: 850px;
+       }
+       .multiple-items img{
+        width: 270px;
+        height: 300px;
+      }
+      .photo {
+        width: 270px;
+        height: 300px;
+      }
+      .carousel{
+        width: 500px;
+      }
+}
