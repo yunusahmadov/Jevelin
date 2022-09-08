@@ -1,0 +1,649 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+width: 100%;
+background-color: var(--header);
+font-size: 20px;
+height: 100%;
+}
+html{
+    height: 100%;
+}
+:root {
+    --header:#2B2B2B;
+    --purple: #994fff;
+    --about: #aca3ba;
+    --red: #a00;
+    --orange: #ffba00;
+    --blue: #2ea2cc;
+    --primary: #a46497;
+    --primary-text: white;
+    --secondary: #ebe9eb;
+    --secondary-text: #515151;
+    --highlight: #3f3849;
+    --highligh-text: white;
+    --h5text: #b2aabf;
+    --subtext: #767676;
+    --btn:#7d1eff;
+}
+
+.header_container{
+    width: 100%;
+    height:80px;
+    background-color: white;
+    position: fixed;
+    background-color: var(--header);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1000;  
+    align-items: center;
+    transition: 1s;
+}
+.header_container_logo{
+    background-image:url(./img/Jevelin_logo_light.png);
+    width: 110px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header_container_logo{
+    margin-left: 50px;
+}
+.header_container_cart{
+    margin-right: 50px;
+}
+nav ul {
+    display: flex; 
+    gap: 40px;
+    color: var(--highligh-text);
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 70%;
+    color: var(--primary-text);
+}
+
+.header_container_cart{
+    display: flex;
+    height: 50px;
+    gap: 20px;
+    align-items: center;
+    
+}
+.header_container_cart a{
+text-decoration: none;
+font-family: 'Raleway', sans-serif;
+color: var(--secondary);
+font-size: 70%;
+border-radius: 25px;
+padding-left: 45px;
+padding-right: 45px;
+line-height: 50px;
+background-color: var(--btn);
+font-weight: 900;
+}
+.fa-cart-shopping{
+    color: var(--secondary);
+}
+
+.header_center_container{
+    display: flex;
+    padding-top: 80px;
+    justify-content: space-between;
+}
+.header_center_container_left{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 90px;
+
+}
+.header_center_container_left h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 460%;
+    color: var(--secondary);
+    width: 300px;
+    position: relative;
+}
+.header_center_container_left span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 460%;
+    color: var(--purple);
+    position: absolute;
+    left: 400px;
+    top: 462px;
+}
+.header_center_container_left h5{
+font-size: 80%;
+color: var(--secondary);
+margin-top: 70px;
+font-family: 'Poppins', sans-serif;
+}
+
+.header_center_container_left p{
+color: var(--h5text);
+margin-top: 30px;
+max-width: 500px;
+font-family: 'Raleway', sans-serif;
+}
+.header_center_container{
+    position: relative;
+}
+.header_center_container_right{
+    background-image: url(./img/Ellipse-974-copy-4.png);
+    background-repeat: no-repeat;
+    margin-top: 188px;
+   
+}
+.header_center_container_right img{
+    margin-left: 200px;
+    
+}
+/* .header_center_container_right .elipse{
+    position: absolute;
+    background-image: url(./img/Ellipse-974-copy-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   left: 100px;
+    width: 100%;
+    height: 80%;
+    background-position: 100% 50%;
+ 
+
+} */
+
+.right_fixed_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--highligh-text);
+    width: 50px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    right: 30px;
+    top: 200px;
+    font-family: 'Poppins', sans-serif;
+    color: var( --subtext);
+    box-shadow: -10px 10px 20px 2px rgb(0 0 0 / 12%);
+}
+
+
+.fa-bars,
+.fa-glasses,
+.fa-bag-shopping,
+.fa-circle-question,
+.fa-headset,
+.fa-envelope
+{
+    position: relative;
+    z-index: 1;
+
+}
+.fa-bars:hover,
+.fa-glasses:hover,
+.fa-bag-shopping:hover,
+.fa-circle-question:hover,
+.fa-headset:hover,
+.fa-envelope:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+.bars_left,
+.glasses_left,
+.shopping_left,
+.circle_left,
+.headset_left,
+.envelope_left
+{
+    color: var( --subtext);
+    position: absolute;
+    background-color: white;
+    width:30px;
+    height: 60px;
+    margin-right: 80px;
+    padding-right: 80px;
+    padding-left:20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+    font-size: 65%;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    visibility: hidden;
+    opacity:0;
+    white-space:nowrap;
+    cursor:pointer;
+}
+
+.bars_left{
+    top:0;
+}
+.glasses_left{
+    top: 60px;
+}
+.shopping_left{
+    top: 120px;
+}
+.circle_left{
+    top: 180px;
+}
+.headset_left{
+    top: 240px;
+} 
+.envelope_left{
+    top: 300px;
+}
+
+.fa-bars:hover + .bars_left{
+    width:140px;
+    margin-right: 120px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+}
+.bars_left:hover{
+    width:140px;
+    margin-right: 120px;
+    visibility: visible;
+    opacity: 1;
+}
+.fa-glasses:hover + .glasses_left{
+    width:160px;
+    margin-right: 120px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+}
+.glasses_left:hover{
+    width:160px;
+    margin-right: 120px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+
+}
+.fa-bag-shopping:hover + .shopping_left{
+    width:160px;
+    margin-right: 160px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+}
+.shopping_left:hover{
+    width:160px;
+    margin-right: 160px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+}
+.fa-circle-question:hover + .circle_left{
+    width:160px;
+    margin-right: 160px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+}
+.circle_left:hover{
+    width:160px;
+    margin-right: 160px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 80px;
+}
+.fa-headset:hover + .headset_left{
+    width:160px;
+    margin-right: 120px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 30px;
+}
+.headset_left:hover{
+    width:160px;
+    margin-right: 120px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 30px;
+}
+.fa-envelope:hover + .envelope_left{
+    width:220px;
+    margin-right: 180px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 30px;
+    border-bottom-right-radius:5px;
+}
+.envelope_left:hover{
+    width:220px;
+    margin-right: 180px;
+    visibility: visible;
+    opacity: 1;
+    padding-right: 30px;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url('./img/Ellipse-974-copy-22-2.jpg');
+  
+    /* Full height */
+    height: 120%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text_container{
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--about);
+    padding-top: 190px;
+  }
+  .text_container h2{
+    font-size: 160%;
+    font-weight: 700;
+    color: var(--highlight);
+  }
+
+  .text_container h2{
+    font-size: 160%;
+    font-weight: 700;
+    color: var(--btn);
+  }
+  .text_container span{
+    color: var(--highlight);
+  }
+  .text_container h3{
+    font-size: 160%;
+    font-weight: 700;
+    color: var(--highlight);
+  }
+
+  .text_container p{
+    font-size: 90%;
+
+    color: var(--highlight);
+  }
+
+  .carousel {
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    padding: 10px 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+  
+  .photo{
+    width: 370px;
+    height:440px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: var(--btn);
+    
+  }
+
+  .photo img{
+    transition: transform 1s;
+    background: blueviolet;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .photo img:hover{
+    opacity: 0.3;
+  
+  }
+  .photo:hover img {
+    transform: scale(1.1);
+  }
+
+  .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    /* display: none; */
+    position: absolute;
+    left: 150px;
+    top: 220px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.circle i{
+    position: absolute;
+    left: 18px;
+    top: 16px;
+    font-size: 26px;
+    color: grey;
+}
+.shadow:hover .circle{
+    top: 180px;
+    opacity:1;
+}
+/* .photo:hover .circle{
+    display: block;
+}  */
+
+
+
+  .carousel img {
+    width: 100%;
+    transition: 1s;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+    padding:0px;
+    overflow: hidden;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 200px;
+    padding: 5px;
+    background: var(--btn);
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    display: block;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0px;
+  }
+  
+  .next {
+    right: 0px;
+  }
+  
+  .gallery {
+    width: 1200px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    display: flex;
+    gap: 10px;
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
+  .splend{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .splendid{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+  }
+  .splendid_right h5 {
+      color: var(--about);
+      font-size: 70%;
+  }
+
+  .splendid_right h2 {
+      color: var(--highlight);
+      font-size: 240%;
+  }
+  .splendid_cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .splendid_first{
+    display: flex;
+    max-width: 350px;
+    gap: 40px;
+    align-items: center;
+    margin-top: 100px;
+    transition: 0.5s;
+
+  }
+  .splendid_text h5{
+    color: var(--highlight);
+    font-size: 80%;
+  }
+
+  .splendid_text p{
+    color: var(--about);
+    font-size: 80%;
+  }
+  .splendid_first .fa-solid{
+    color: var(--btn);
+    font-size: 120%;
+  }
+  .splendid_first:hover {
+margin-left: 30px;
+  }
+.shadow{
+    /* background: var(--btn); */
+}
+.shadow:hover{
+    opacity: 1;
+}
+
+.multiple-items{
+ width: 1150px;
+ margin-left: auto;
+ margin-right: auto;
+ text-decoration: none !important;
+}
+.multiple-items img{
+  width: 380px;
+
+}
+.multiple-items .slick-prev{
+  display: none !important;
+}
+.multiple-items .slick-next{
+  display: none !important;
+  }
+  .multiple-items ul{
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  list-style-type: none !important;
+}
+
+.multiple-items ul li{
+list-style: none;
+
+}
+
+#slick-slide-control00{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: var(--purple);
+  background-color: var(--purple);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#slick-slide-control01{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: var(--purple);
+  background-color: var(--purple);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#slick-slide-control02{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: var(--purple);
+  background-color: var(--purple);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.slick_dots span{
+  display: none;
+}
+ .slick-dotted{
+  display: none;
+}
+
+#slick-slide-control00:focus{
+  color: #7d1eff;
+  background-color: #7d1eff;
+}
+#slick-slide-control01:focus{
+  color: #7d1eff;
+  background-color: #7d1eff;
+}
+#slick-slide-control02:focus{
+  color: #7d1eff;
+  background-color: #7d1eff;
+}
+
+
+
