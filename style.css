@@ -671,6 +671,7 @@ font-family: 'Raleway', sans-serif;
   .splendid_cards{
     display: flex;
     flex-direction: column;
+    transition: 1s;
   }
   .splendid_first{
     display: flex;
@@ -678,7 +679,7 @@ font-family: 'Raleway', sans-serif;
     gap: 40px;
     align-items: center;
     margin-top: 100px;
-    transition: 0.5s;
+    transition: 1s;
 
   }
   .splendid_text h5{
@@ -695,7 +696,7 @@ font-family: 'Raleway', sans-serif;
     font-size: 120%;
   }
   .splendid_first:hover {
-margin-left: 30px;
+  padding-left: 30px;
   }
 .shadow:hover{
     opacity: 1;
@@ -710,7 +711,6 @@ margin-left: 30px;
 }
 .multiple-items img{
   width: 380px;
-
 }
 .multiple-items .slick-prev{
   display: none !important;
@@ -851,10 +851,9 @@ list-style: none;
   color: #7d1eff;
   background-color: #7d1eff;
 }
-
-
-
-
+.photo:hover{
+cursor: pointer;
+}
 .preloader {
   position: fixed;
   left: 0;
@@ -1061,6 +1060,15 @@ height: 100%;
   height: 330px;
   background-position: 50% 50%;
 }
+.green_watch{
+  cursor: pointer;
+}
+.purple_watch{
+  cursor: pointer;
+}
+.gold_watch{
+  cursor: pointer;
+}
 .green_text{
   display: flex;
   align-items: center;
@@ -1192,6 +1200,9 @@ footer{
   font-size: 150%;
   margin-top: 20px;
 }
+.footer_icons>i:hover{
+  cursor: pointer;
+}
 .footer_container{
   max-width: 1100px;
   margin: 0 auto;
@@ -1222,6 +1233,18 @@ footer{
 .footer_second h5{
   color: #a1a1a1;
 }
+.footer_second h5:hover{
+  cursor: pointer;
+}
 .last_cont_icons i{
+  cursor: pointer;
+}
+.header_container_nav li:hover{
+  cursor: pointer;
+}
+.header_container_logo:hover{
+  cursor: pointer;
+}
+.header_container_cart i:hover{
   cursor: pointer;
 }

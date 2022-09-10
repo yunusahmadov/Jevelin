@@ -57,12 +57,25 @@ gap: 100px;
   }
 }
 }
+@media screen and (max-width: 1000px){
+iframe{
+  width: 600px;
+ height: 400px;
+}
+.vid{
+  max-width:  600px;
+}
+.parallax2{
+  height: 120%;
+}
+}
 @media screen and (max-width: 970px){
   .multiple-items{
-    width: 650px;
-    margin-left: 50px;   
+    max-width: 650px;
+    
          
    }
+   
    .multiple-items img{
     width: 210px;
     height: 230px;
@@ -284,6 +297,20 @@ max-width: 350px;
 }
 
 }
+
+@media screen and (max-width: 600px){
+  iframe{
+    width: 400px;
+   height: 300px;
+  }
+  .vid{
+    max-width:  400px;
+  }
+  .parallax2{
+    height: 110%;
+  }
+  }
+
 
 @media screen and (max-width: 580px){
   .multiple-items{
