@@ -6,12 +6,14 @@ $(window).scroll(function () {
     $('.header_container_logo').css("background-image","url(./img/Jevelin_logo_dark.png)")
     $('nav ul').css("color","#2B2B2B")
     $('.fa-cart-shopping').css("color","black")
+    $('.to_top').show()
     }
     else if($this.scrollTop() < 20){
         $('.header_container').css("background-color", "#2B2B2B")
         $('.header_container_logo').css("background-image","url(./img/Jevelin_logo_light.png)")
         $('nav ul').css("color","white")
         $('.fa-cart-shopping').css("color","white")
+        $('.to_top').hide()
     }
 });
 
@@ -33,14 +35,14 @@ $('.multiple-items').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 824,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 651,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -51,4 +53,24 @@ $('.multiple-items').slick({
       // instead of a settings object
     ]
   });
+
+  $( document ).ready(function() {
+
+    $( ".cross" ).hide();
+    $( ".menu" ).hide();
+    $( ".hamburger" ).click(function() {
+    $( ".menu" ).slideToggle( 300, function() {
+    $( ".hamburger" ).hide();
+    $( ".cross" ).show();
+    });
+    });
+    
+    $( ".cross" ).click(function() {
+    $( ".menu" ).slideToggle( 300, function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+    });
+    });
+    
+    });
 

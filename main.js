@@ -56,3 +56,11 @@ window.onload = function () {
     document.body.classList.remove('loaded_hiding');
   }, 500);
 }
+
+let play =document.querySelector('.play')
+let screen =document.querySelector('.screen')
+let vid=document.querySelector('.vid')
+play.addEventListener('click',()=>{
+  screen.style.display='none'
+  vid.style.display='block'
+})
