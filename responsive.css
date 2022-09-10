@@ -125,6 +125,21 @@ gap: 100px;
 .header_container_cart a{
 display: none;
 }
+.three_watch{
+  flex-wrap: wrap;
+}
+.green_watch{
+  width: 500px;
+  height: 520px;
+}
+.purple_watch{
+  width: 500px;
+  height: 520px;
+}
+.gold_watch{
+  width: 500px;
+  height: 520px;
+}
 }
 
 @media screen and (max-width: 863px){
@@ -296,7 +311,16 @@ max-width: 350px;
   .multiple-items ul{
     width: 200px;
   }
+  .header_center_container h2{
+    font-size: 180%;
+    width: 180px;
+  }
+  .header_center_container span{
+    font-size: 180%;
+    left: 220px;
+    top: 56px;
   } 
+}
 
   @media screen and (max-width: 520px){
     .multiple-items{
