@@ -477,7 +477,7 @@ font-family: 'Raleway', sans-serif;
     background-image: url('./img/Ellipse-974-copy-22-2.jpg');
   
     /* Full height */
-    height: 120%; 
+    min-height: 120%; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
