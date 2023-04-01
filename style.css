@@ -55,7 +55,7 @@ html{
 .hamburger{
   position: absolute;
   right: 70px;
-  top: 18px;
+  top: 10px;
 background:none;
 width: 50px;
 line-height:45px;
