@@ -71,7 +71,7 @@ z-index:10000000000000;
 .cross{
   position: absolute;
   right: 70px;
-  top: 18px;
+  top: 10px;
 background:none;
 padding:7px 15px 0px 15px;
 color:#999;
