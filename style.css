@@ -856,6 +856,9 @@ cursor: pointer;
 }
 .preloader {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0;
   top: 0;
   right: 0;
@@ -1247,4 +1250,12 @@ footer{
 }
 .header_container_cart i:hover{
   cursor: pointer;
+}
+
+.created-by{
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  font-family: 'Noto Sans', sans-serif;
+
 }
